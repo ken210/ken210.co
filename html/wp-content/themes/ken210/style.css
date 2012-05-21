@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Ewert");
 /* Theme Name: ken210
  * Theme URI: http://ken210.co
  * Description: My badass theme
@@ -68,4 +69,20 @@ a img {
 /* line 114, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 14, sass/style.sass */
+body {
+  font-family: "Cabin Condensed", "Helvetica", sans-serif;
+}
+
+/* line 17, sass/style.sass */
+h1 {
+  font-size: 72px;
+  font-family: "Ewert";
+}
+
+/* line 22, sass/style.sass */
+h2 {
+  font-size: 21px;
 }

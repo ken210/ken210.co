@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title></title>
+	<title><?php bloginfo( 'name' ); ?></title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -19,7 +19,8 @@
 </head>
 <body>
 <header>
-
+	<h1><?php bloginfo( 'name' ); ?></h1>
+	<h2>Front-end developer</h2>
 </header>
 <div role="main">
 </div>
