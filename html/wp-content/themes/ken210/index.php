@@ -18,15 +18,19 @@
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-<header>
-	<h1><?php bloginfo( 'name' ); ?></h1>
-	<h2>Front-end developer</h2>
-</header>
-<div role="main">
-</div>
-<footer>
-
-</footer>
+	<div id="wrapper">
+		<div class="content">
+			<header>
+				<h1><?php bloginfo( 'name' ); ?></h1>
+				<h2>Front-end developer</h2>
+			</header>
+			<div role="main">
+			</div>
+			<footer>
+			
+			</footer>
+		</div>
+	</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php bloginfo('stylesheet_directory'); ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>

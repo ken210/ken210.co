@@ -7,17 +7,30 @@
  * Tags: alltype
  */
 
+@import base
+@import compass/support
 @import compass/reset
 @import compass/css3
+@import compass/css3/images
+@import compass/utilities/general/tag-cloud
 @import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Ewert")
 
 body
 	font-family: 'Cabin Condensed', 'Helvetica', sans-serif
 
-h1
-	font:
-		size: 72px
-		family: 'Ewert'
+#wrapper
+	@include fullscreen
+	@include background(image-url("noise.png"), radial-gradient(center, circle, #ff0 0%, #f00 120%))
+	background-repeat: repeat, no-repeat
+	position: absolute
+	overflow: auto
+	.content
+		height: 2000px
+		//@include tag-cloud(15px)
+
+h2
+	font-size: 32px
+	font-family: Ewert
 
 h2
 	font-size: 21px

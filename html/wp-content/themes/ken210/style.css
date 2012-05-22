@@ -71,18 +71,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 14, sass/style.sass */
+/* line 18, sass/style.sass */
 body {
   font-family: "Cabin Condensed", "Helvetica", sans-serif;
 }
 
-/* line 17, sass/style.sass */
-h1 {
-  font-size: 72px;
-  font-family: "Ewert";
+/* line 21, sass/style.sass */
+#wrapper {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('img/noise.png?1337715250'), -webkit-gradient(radial, 50%, 0, 50%, 120, color-stop(0%, #ffff00), color-stop(120%, #ff0000));
+  background: url('img/noise.png?1337715250'), -webkit-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
+  background: url('img/noise.png?1337715250'), -moz-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
+  background: url('img/noise.png?1337715250'), -o-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
+  background: url('img/noise.png?1337715250'), -ms-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
+  background: url('img/noise.png?1337715250'), radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
+  background-repeat: repeat, no-repeat;
+  position: absolute;
+  overflow: auto;
+}
+/* line 27, sass/style.sass */
+#wrapper .content {
+  height: 2000px;
 }
 
-/* line 22, sass/style.sass */
+/* line 31, sass/style.sass */
+h2 {
+  font-size: 32px;
+  font-family: Ewert;
+}
+
+/* line 35, sass/style.sass */
 h2 {
   font-size: 21px;
 }
