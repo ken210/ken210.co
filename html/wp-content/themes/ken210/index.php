@@ -21,8 +21,8 @@
 	<div id="wrapper">
 		<div class="content">
 			<header>
-				<h1><?php bloginfo( 'name' ); ?></h1>
-				<h2>Front-end developer</h2>
+				<h1>ken210<br /><span>& co</span></h1>
+				<h2>Front-end badass</h2>
 			</header>
 			<div role="main">
 			</div>

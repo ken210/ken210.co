@@ -11,26 +11,54 @@
 @import compass/support
 @import compass/reset
 @import compass/css3
-@import compass/css3/images
 @import compass/utilities/general/tag-cloud
-@import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Ewert")
+
+// fonts
+@import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700")
+//@font-face
+//font-family: 'HomesteadDisplayDisplay'
+//src: url('homestead-display-webfont.eot')
+//src: url('homestead-display-webfont.eot?#iefix') format('embedded-opentype'),
+//	url('homestead-display-webfont.woff') format('woff'),
+//	url('homestead-display-webfont.ttf') format('truetype'),
+//	url('homestead-display-webfont.svg#HomesteadDisplayDisplay') format('svg')
+//font-weight: normal
+//font-style: normal
+
+@include font-face("Homestead", font-files("homestead.woff", "homestead.ttf", "homestead.svg"), "homestead.eot", "normal", "normal")
 
 body
 	font-family: 'Cabin Condensed', 'Helvetica', sans-serif
 
+.content
+	width: 960px
+	position: relative
+	margin: 0 auto
+
 #wrapper
-	@include fullscreen
-	@include background(image-url("noise.png"), radial-gradient(center, circle, #ff0 0%, #f00 120%))
-	background-repeat: repeat, no-repeat
-	position: absolute
-	overflow: auto
+	// @include fullscreen
+	// @include background(radial-gradient(center, circle, rgba(4, 36, 53, 0), rgba(4, 36, 53, 0.3) 120%), image-url("bg_site5.jpg"))
+	// background-repeat: repeat-x, no-repeat
+	// background-position: center, top right
+	// background-attachment: fixed, scroll
+	// position: absolute
+	// overflow: auto
+	@include background(image-url("bg_site5.jpg"))
+	background-position: top center
+	background-repeat: repeat-x
 	.content
 		height: 2000px
 		//@include tag-cloud(15px)
 
-h2
-	font-size: 32px
-	font-family: Ewert
+h1, h2, h3
+	font-family: Homestead
+
+h1
+	font-size: 260px
+	color: white
+	line-height: 146px
+	span
+		color: black
 
 h2
 	font-size: 21px

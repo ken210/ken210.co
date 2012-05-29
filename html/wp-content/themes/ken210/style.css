@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Ewert");
+@import url("http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700");
 /* Theme Name: ken210
  * Theme URI: http://ken210.co
  * Description: My badass theme
@@ -71,39 +71,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 18, sass/style.sass */
+@font-face {
+  font-family: "Homestead";
+  src: url('fonts/homestead.eot');
+  src: url('fonts/homestead.eot?#iefix') format('eot'), url('fonts/homestead.woff') format('woff'), url('fonts/homestead.ttf') format('truetype'), url('fonts/homestead.svg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+/* line 30, sass/style.sass */
 body {
   font-family: "Cabin Condensed", "Helvetica", sans-serif;
 }
 
-/* line 21, sass/style.sass */
-#wrapper {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url('img/noise.png?1337715250'), -webkit-gradient(radial, 50%, 0, 50%, 120, color-stop(0%, #ffff00), color-stop(120%, #ff0000));
-  background: url('img/noise.png?1337715250'), -webkit-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
-  background: url('img/noise.png?1337715250'), -moz-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
-  background: url('img/noise.png?1337715250'), -o-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
-  background: url('img/noise.png?1337715250'), -ms-radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
-  background: url('img/noise.png?1337715250'), radial-gradient(center, circle, #ffff00 0%, #ff0000 120%);
-  background-repeat: repeat, no-repeat;
-  position: absolute;
-  overflow: auto;
+/* line 33, sass/style.sass */
+.content {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
 }
-/* line 27, sass/style.sass */
+
+/* line 38, sass/style.sass */
+#wrapper {
+  background: url('img/bg_site5.jpg?1338325297');
+  background-position: top center;
+  background-repeat: repeat-x;
+}
+/* line 49, sass/style.sass */
 #wrapper .content {
   height: 2000px;
 }
 
-/* line 31, sass/style.sass */
-h2 {
-  font-size: 32px;
-  font-family: Ewert;
+/* line 53, sass/style.sass */
+h1, h2, h3 {
+  font-family: Homestead;
 }
 
-/* line 35, sass/style.sass */
+/* line 56, sass/style.sass */
+h1 {
+  font-size: 260px;
+  color: white;
+  line-height: 146px;
+}
+/* line 60, sass/style.sass */
+h1 span {
+  color: black;
+}
+
+/* line 63, sass/style.sass */
 h2 {
   font-size: 21px;
 }
