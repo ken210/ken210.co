@@ -109,16 +109,17 @@ h1, h2, h3 {
 
 /* line 56, sass/style.sass */
 h1 {
-  font-size: 260px;
+  font-size: 276px;
   color: white;
-  line-height: 146px;
+  line-height: 155px;
+  padding-top: 38px;
 }
-/* line 60, sass/style.sass */
+/* line 61, sass/style.sass */
 h1 span {
   color: black;
 }
 
-/* line 63, sass/style.sass */
+/* line 64, sass/style.sass */
 h2 {
   font-size: 21px;
 }
